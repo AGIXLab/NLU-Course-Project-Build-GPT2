@@ -1,4 +1,4 @@
-# NLU Course Default Final Project: Build GPT-2
+# NLU Course Default Final Project: GPT and Downstream Tasks
 
 This is the default final project for the Natural Language Understanding class. 
 
@@ -12,22 +12,23 @@ In broad strokes, Part 1 of this project targets:
 * modules/attention.py: Missing code blocks.
 * modules/gpt2_layer.py: Missing code blocks.
 * models/gpt2.py: Missing code blocks.
-* classifier.py: Missing code blocks.
 * optimizer.py: Missing code blocks.
 
 To test Part 1, you will run:
 
-* `optimizer_test.py`: To test your implementation of `optimizer.py`.
-* `sanity_check.py`: To test your implementation of GPT models.
-* `classifier.py` : To perform sentiment classification using your models.
+* `test/optimizer_test.py`: To test your implementation of `optimizer.py`.
+* `test/sanity_check.py`: To test your implementation of GPT models.
 
-In Part 2 of this project, you will use GPT2 (via cloze-style classification) detect if one sentence is a paraphrase of 
+In Part 2 of this project, you will train a mini-GPT to write like Shakespeare.
+
+In Part 3 of this project, you will use GPT2 (via cloze-style classification) detect if one sentence is a paraphrase of 
 another as well as generate sonnets via autoregressive language modeling.  
 
-To test Part 2, you will run:
+To test Part 3, you will run:
 
-* `paraphrase_detection.py`: To perform paraphrase detection. 
-* `sonnet_generation.py`: To perform sonnet generation.
+* `downstream-tasks/classifier.py`: To perform sentiment analysis.
+* `downstream-tasks/paraphrase_detection.py`: To perform paraphrase detection. 
+* `downstream-tasks/sonnet_generation.py`: To perform sonnet generation.
 
 Important: Adjust training hyperparameters, particularly batch size, according to your GPU's specifications to optimize performance and prevent out-of-memory errors.
 
@@ -39,7 +40,7 @@ paraphrase of another as well as its ability to generate sonnets.
 
 ## Setup instructions
 
-Follow `setup.sh` to properly setup a conda environment and install dependencies.
+Follow `setup.sh` to properly setup a conda environment and install dependencies. Becareful about the working directory when you are running your scripts.
 
 ## Acknowledgement
 
